@@ -1,0 +1,28 @@
+<!-- Timer component layout -->
+<div class="timers-container">
+    <!-- Loop through timers and display each one -->
+    <div *ngFor="let timer of timers" class="timer-card">
+        <div class="timer-header">
+            <p style="padding-top: 15px; font-size: 20px;">
+                <strong>{{ timer.title }}</strong>
+            </p> <!-- Display timer title -->
+            <h2 class="push-right" style="padding-top: 10px;">
+                <span style="color: gray; ">|</span> &nbsp;
+                <span style="color: #5056ED;">{{ formatTime(timer.time) }}</span>
+            </h2>
+            <button *ngIf="!timer.isRunning" (click)="startTimer(timer)" class="start-btn">Start</button>
+            <button *ngIf="timer.isRunning" (click)="stopTimer(timer)" class="stop-btn">Stop</button>
+            <button class="delete-btn" (click)="deleteTimer(timer)">
+                <p style="font-size: large;">x</p>
+            </button> <!-- Delete button -->
+        </div>
+        <div class="timer-history">
+            <p style="font-size: 16px;">History</p>
+            <!-- Display timer history -->
+            <p *ngFor="let entry of timer.history" style="color: grey; font-size: 16px;">{{ entry }}</p>
+        </div>
+    </div>
+    <div class="add-timer-btn">
+        <button (click)="openDialog()">+</button>
+    </div>
+</div>

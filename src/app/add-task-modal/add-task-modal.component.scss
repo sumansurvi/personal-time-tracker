@@ -1,0 +1,31 @@
+/* Styles for the task dialog component */
+.task-dialog {
+    background-color: white;
+    padding: 20px 40px 20px 20px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-dialog h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.task-dialog input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.task-dialog button {
+    width: 50%;
+    height: 40px;
+    background-color: #5056ED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}

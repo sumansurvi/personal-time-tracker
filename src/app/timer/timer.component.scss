@@ -1,0 +1,106 @@
+.timers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    width: 55%;
+    padding-left: 23.5%;
+    background-color: #F2F6F8;
+}
+
+.timer-card {
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for aesthetics */
+}
+
+.timer-header {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.timer-body {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+.timer-history {
+    margin-top: 10px;
+}
+
+.start-btn {
+    background-color: #5056ED;
+    /* Green for start */
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 20%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.stop-btn {
+    background-color: #ED5050;
+    /* Red for stop */
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 20%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: #bab6b6 !important;
+    border: none;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    /* Pointer cursor for delete button */
+}
+
+.add-timer-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.add-timer-btn button {
+    background-color: #3f51b5;
+    /* Blue for add button */
+    color: white;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    /* Pointer cursor for add button */
+}
+
+.delete-btn {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Blue for add button */
+    color: white;
+    border: none;
+    padding: 3px 10px 5px 10px !important;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
